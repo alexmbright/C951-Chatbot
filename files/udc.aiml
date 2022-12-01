@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    
+  <category>
+    <pattern>*</pattern>
+    <template>Sorry, I don't understand. Say "hi" to begin!</template>
+  </category>
+  
+  <category>
+    <pattern>HI</pattern>
+    <template>Hello! I am your career advice bot. What is your name?</template>
+  </category>
+  
+  <category>
+    <pattern>HI THERE</pattern>
+    <template>Hello! I am your career advice bot. What is your name?</template>
+  </category>
+  
+  <category>
+      <pattern>HELLO</pattern>
+      <template>Hello! I am your career advice bot. What is your name?</template>
+  </category>
+
+  <category>
+    <pattern>HEY</pattern>
+    <template>Hello! I am your career advice bot. What is your name?</template>
+  </category>
+  
+  <category>
+    <pattern>START</pattern>
+    <template>Hello! I am your career advice bot. What is your name?</template>
+  </category>
+  
+  <category>
+    <pattern>RESTART</pattern>
+    <template>Hello! I am your career advice bot. What is your name?</template>
+  </category>
+  
+  <category>
+    <pattern>EXIT</pattern>
+    <template>Bye! Thanks for asking for my advice!</template>
+  </category>
+  
+  <category>
+    <pattern>*</pattern>
+    <that>WHAT IS YOUR NAME</that>
+    <template>
+        <message>Nice to meet you, <set name="username"><star /></set>! Are you seeking career advice?</message>
+        <button>
+            <text>Yes</text>
+            <postback>Seeking career advice</postback>
+        </button>
+        <button>
+            <text>No</text>
+            <postback>Not seeking career advice</postback>
+        </button>
+    </template>
+  </category>
+  
+  <category>
+      <pattern>NOT SEEKING CAREER ADVICE</pattern>
+      <template>No problem! Click "yes" if you change your mind.</template>
+  </category>
+  
+  <category>
+      <pattern>SEEKING CAREER ADVICE</pattern>
+      <template>
+        <message>Great! Are you currently studying Computer Science?</message>
+        <button>
+            <text>Yes</text>
+            <postback>Computer Science major</postback>
+        </button>
+        <button>
+            <text>No</text>
+            <postback>Not Computer Science major</postback>
+        </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>NOT COMPUTER SCIENCE MAJOR</pattern>
+      <template>Sorry, I only give career advice to Computer Science students.</template>
+  </category>
+  
+  <category>
+      <pattern>COMPUTER SCIENCE MAJOR</pattern>
+      <template>
+          <message>Awesome! What topic interests you the most?</message>
+          <button>
+              <text>Programming</text>
+              <postback>Interested in programming</postback>
+          </button>
+          <button>
+              <text>Security</text>
+              <postback>Interested in security</postback>
+          </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>INTERESTED IN PROGRAMMING</pattern>
+      <template>
+          <message>What do you prefer to focus on when programming?</message>
+          <button>
+              <text>User experience</text>
+              <postback>Front end development</postback>
+          </button>
+          <button>
+              <text>Server-side functionality</text>
+              <postback>Back end development</postback>
+          </button>
+          <button>
+              <text>Both</text>
+              <postback>Full stack development</postback>
+          </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>FRONT END DEVELOPMENT</pattern>
+      <template>
+          <message>Here is my suggestion:</message>
+          <card>
+              <title>Front-End Developer</title>
+              <subtitle>Focused on what the user sees and interacts with.</subtitle>
+              <image>https://cdn.wccftech.com/wp-content/uploads/2016/10/Front-End-Development-Bundle.jpg</image>
+              <button>
+                  <text>Tell me more!</text>
+                  <url>https://frontendmasters.com/guides/front-end-handbook/2018/what-is-a-FD.html</url>
+              </button>
+          </card>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>BACK END DEVELOPMENT</pattern>
+      <template>
+          <message>Here is my suggestion:</message>
+          <card>
+              <title>Back-End Developer</title>
+              <subtitle>Focused on data storage, server-side functionality, and security.</subtitle>
+              <image>https://www.simplilearn.com/ice9/free_resources_article_thumb/Programming_Languages.PNG</image>
+              <button>
+                  <text>Tell me more!</text>
+                  <url>https://www.coursera.org/articles/back-end-developer</url>
+              </button>
+          </card>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>FULL STACK DEVELOPMENT</pattern>
+      <template>
+          <message>Here is my suggestion:</message>
+          <card>
+              <title>Full-Stack Developer</title>
+              <subtitle>Focused on all aspects of an application.</subtitle>
+              <image>https://d3lkc3n5th01x7.cloudfront.net/wp-content/uploads/2019/01/09013537/full-stack-developer.svg</image>
+              <button>
+                  <text>Tell me more!</text>
+                  <url>https://www.geeksforgeeks.org/what-is-full-stack-development/</url>
+              </button>
+          </card>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>INTERESTED IN SECURITY</pattern>
+      <template>
+          <message>What is your preferred area of security?</message>
+          <button>
+              <text>Policy and Infrastructure</text>
+              <postback>SECURITY ANALYST</postback>
+          </button>
+          <button>
+              <text>Testing</text>
+              <postback>PENETRATION TESTING</postback>
+          </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>SECURITY ANALYST</pattern>
+      <template>
+          <message>Here is my suggestion:</message>
+          <card>
+              <title>Cybersecurity Analyst</title>
+              <subtitle>Protects from cyberthreats and develops important protocols.</subtitle>
+              <image>https://www.simplilearn.com/ice9/free_resources_article_thumb/What_Is_A_Cyber_Security_Analyst.jpg</image>
+              <button>
+                  <text>Tell me more!</text>
+                  <url>https://www.wgu.edu/career-guide/information-technology/cybersecurity-analyst-career.html</url>
+              </button>
+          </card>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>PENETRATION TESTING</pattern>
+      <template>
+          <message>Here is my suggestion:</message>
+          <card>
+              <title>Penetration Tester</title>
+              <subtitle>Tests security systems by exploiting vulnerabilities.</subtitle>
+              <image>https://brightsec.com/wp-content/uploads/2022/03/blog-What-is-Network-Penetration-Testing_.png</image>
+              <button>
+                  <text>Tell me more!</text>
+                  <url>https://www.coresecurity.com/penetration-testing</url>
+              </button>
+          </card>
+      </template>
+  </category>
+
+</aiml>
