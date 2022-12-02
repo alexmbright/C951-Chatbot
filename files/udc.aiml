@@ -8,37 +8,40 @@
   
   <category>
     <pattern>HI</pattern>
-    <template>Hello! I am your career advice bot. What is your name?</template>
+    <template>Hello! I am the CS career advice bot. What is your name?</template>
   </category>
   
   <category>
     <pattern>HI THERE</pattern>
-    <template>Hello! I am your career advice bot. What is your name?</template>
+    <template><srai>HI</srai></template>
   </category>
   
   <category>
       <pattern>HELLO</pattern>
-      <template>Hello! I am your career advice bot. What is your name?</template>
+      <template><srai>HI</srai></template>
   </category>
 
   <category>
     <pattern>HEY</pattern>
-    <template>Hello! I am your career advice bot. What is your name?</template>
+    <template><srai>HI</srai></template>
   </category>
   
   <category>
     <pattern>START</pattern>
-    <template>Hello! I am your career advice bot. What is your name?</template>
+    <template><srai>HI</srai></template>
   </category>
   
   <category>
     <pattern>RESTART</pattern>
-    <template>Hello! I am your career advice bot. What is your name?</template>
+    <template><srai>HI</srai></template>
   </category>
   
   <category>
     <pattern>EXIT</pattern>
-    <template>Bye! Thanks for asking for my advice!</template>
+    <template>
+        <message>Bye! Thanks for using the CS career advice bot.</message>
+        <button>Restart</button>
+    </template>
   </category>
   
   <category>
@@ -94,6 +97,7 @@
               <text>Security</text>
               <postback>Interested in security</postback>
           </button>
+          <button>Exit</button>
       </template>
   </category>
   
@@ -110,8 +114,12 @@
               <postback>Back end development</postback>
           </button>
           <button>
-              <text>Both</text>
+              <text>Everything!</text>
               <postback>Full stack development</postback>
+          </button>
+          <button>
+              <text>Go back</text>
+              <postback>COMPUTER SCIENCE MAJOR</postback>
           </button>
       </template>
   </category>
@@ -127,6 +135,10 @@
               <button>
                   <text>Tell me more!</text>
                   <url>https://frontendmasters.com/guides/front-end-handbook/2018/what-is-a-FD.html</url>
+              </button>
+              <button>
+                  <text>Go back</text>
+                  <postback>INTERESTED IN PROGRAMMING</postback>
               </button>
           </card>
       </template>
@@ -144,6 +156,10 @@
                   <text>Tell me more!</text>
                   <url>https://www.coursera.org/articles/back-end-developer</url>
               </button>
+              <button>
+                  <text>Go back</text>
+                  <postback>INTERESTED IN PROGRAMMING</postback>
+              </button>
           </card>
       </template>
   </category>
@@ -159,6 +175,10 @@
               <button>
                   <text>Tell me more!</text>
                   <url>https://www.geeksforgeeks.org/what-is-full-stack-development/</url>
+              </button>
+              <button>
+                  <text>Go back</text>
+                  <postback>INTERESTED IN PROGRAMMING</postback>
               </button>
           </card>
       </template>
@@ -176,6 +196,10 @@
               <text>Testing</text>
               <postback>PENETRATION TESTING</postback>
           </button>
+          <button>
+              <text>Go back</text>
+              <postback>COMPUTER SCIENCE MAJOR</postback>
+          </button>
       </template>
   </category>
   
@@ -190,6 +214,10 @@
               <button>
                   <text>Tell me more!</text>
                   <url>https://www.wgu.edu/career-guide/information-technology/cybersecurity-analyst-career.html</url>
+              </button>
+              <button>
+                  <text>Go back</text>
+                  <postback>INTERESTED IN SECURITY</postback>
               </button>
           </card>
       </template>
@@ -206,6 +234,10 @@
               <button>
                   <text>Tell me more!</text>
                   <url>https://www.coresecurity.com/penetration-testing</url>
+              </button>
+              <button>
+                  <text>Go back</text>
+                  <postback>INTERESTED IN SECURITY</postback>
               </button>
           </card>
       </template>
