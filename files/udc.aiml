@@ -61,14 +61,35 @@
   </category>
   
   <category>
+      <pattern>ADVICE</pattern>
+      <template>
+          <message>Are you seeking career advice?</message>
+          <button>
+            <text>Yes</text>
+            <postback>Seeking career advice</postback>
+          </button>
+          <button>
+            <text>No</text>
+            <postback>Not seeking career advice</postback>
+        </button>
+      </template>
+  </category>
+  
+  <category>
       <pattern>NOT SEEKING CAREER ADVICE</pattern>
-      <template>No problem! Click "yes" if you change your mind.</template>
+      <template>
+          <message>No problem! Maybe another day...</message>
+          <button>
+              <text>Go back</text>
+              <postback>Advice</postback>
+          </button>
+      </template>
   </category>
   
   <category>
       <pattern>SEEKING CAREER ADVICE</pattern>
       <template>
-        <message>Great! Are you currently studying Computer Science?</message>
+        <message>Are you currently studying Computer Science?</message>
         <button>
             <text>Yes</text>
             <postback>Computer Science major</postback>
@@ -82,7 +103,13 @@
   
   <category>
       <pattern>NOT COMPUTER SCIENCE MAJOR</pattern>
-      <template>Sorry, I only give career advice to Computer Science students.</template>
+      <template>
+          <message>Sorry, I only give career advice to Computer Science students.</message>
+          <button>
+              <text>Go back</text>
+              <postback>Seeking career advice</postback>
+          </button>
+      </template>
   </category>
   
   <category>
