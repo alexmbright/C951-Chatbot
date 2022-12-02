@@ -48,7 +48,7 @@
     <pattern>*</pattern>
     <that>WHAT IS YOUR NAME</that>
     <template>
-        <message>Nice to meet you, <set name="username"><star /></set>! Are you seeking career advice?</message>
+        <message>Nice to meet you, <star />! Are you seeking career advice?</message>
         <button>
             <text>Yes</text>
             <postback>Seeking career advice</postback>
@@ -88,7 +88,7 @@
   <category>
       <pattern>COMPUTER SCIENCE MAJOR</pattern>
       <template>
-          <message>Awesome! What topic interests you the most?</message>
+          <message>What topic interests you the most?</message>
           <button>
               <text>Programming</text>
               <postback>Interested in programming</postback>
@@ -114,7 +114,7 @@
               <postback>Back end development</postback>
           </button>
           <button>
-              <text>Everything!</text>
+              <text>Everything</text>
               <postback>Full stack development</postback>
           </button>
           <button>
